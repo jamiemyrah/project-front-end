@@ -1,38 +1,221 @@
 .App {
-  text-align: center;
+    text-align: center;
+}
+.hed {
+    font-size: 3.8rem;
+}
+.full {
+    background-color: rgb(11, 115, 80);
+}
+.log {
+    display: flex;
+    justify-content: space-evenly;
+}
+.for {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.mas {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.in {
+    padding: 10px 0;
+    margin: 15px 0;
+    border: 2px solid rgb(165, 162, 162);
+    border-radius: 10px;
+
+}
+.btn {
+    margin: 15px 0;
+    width: 100%;
+
+}
+.hello {
+    text-align: start;
+    border-radius: 50px;
+    height: 50vh;
+    margin-top: 120px;
+}
+.span {
+    font-size: 12px;
+    color: red;
+    padding: 3px;
+    display: none;
+    width: 300px;
+}
+input:invalid[focused="true"] {
+    border: 1px solid red;
+    border-radius: 5px;
+}
+input:invalid[focused="true"] ~span {
+    display: block;
+}
+.ter {
+    text-decoration-line: none;
+    font-size: 1.2rem;
+}
+.max {
+    justify-content: center;
+    align-items: center;
+}
+.fil {
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.put {
+    align-items: center;
+    justify-content: center;
+
+}
+.mat {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+.int {
+    background: #ecf0f3;
+    padding: 10px 10px 10px 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn {
+
+    margin-top: 20px;
+    height: 45px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 900;
+
+}
+.label {
+    padding: 10px 0;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.pan {
+    background-image: url('https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&w=600');
+    height: 100vh;
+}
+nav {
+    height: 500px;
+    width: 300px;
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(390px at 225px 24px);
+    clip-path: circle(390px at 150px 24px);
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navicon {
+
+    padding: 23px 20px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+}
+
+.navicon div {
+
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+    position: absolute;
+}
+
+.navicon div:before {
+    top: -7px;
+}
+
+.navicon div:after {
+    top: 7px;
+}
+.do {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+.ones {
+    margin-left: 15px;
+}
+.gan {
+    width: 30vh;
+    height: 7vh;
+    border-radius: 20px;
+}
+.gad {
+    width: 20vh;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    border-radius: 20px;
+}
+.form_container {
+
+    width: 600px;
+    margin-top: 50px;
+}
+
+.page-item.active .page-link {
+    height: 100%;
+    display: flex !important;
+    align-items: center !important;
+}
+
+td {
+    vertical-align: middle !important;
+}
+.start {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0;
+
+}
+.lab {
+    color: white;
 }
